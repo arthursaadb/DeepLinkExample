@@ -1,0 +1,4 @@
+com/raywenderlich/android/promoapp/databinding/ActivityPromoBinding.java
+ com.raywenderlich.android.promoapp.databinding.ActivityPromoBinding
+com/raywenderlich/android/promoapp/BuildConfig.java
+ com.raywenderlich.android.promoapp.BuildConfig

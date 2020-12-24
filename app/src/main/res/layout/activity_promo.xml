@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2020 Razeware LLC
+  ~
+  ~ Permission is hereby granted, free of charge, to any person obtaining a copy
+  ~ of this software and associated documentation files (the "Software"), to deal
+  ~ in the Software without restriction, including without limitation the rights
+  ~ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  ~ copies of the Software, and to permit persons to whom the Software is
+  ~ furnished to do so, subject to the following conditions:
+  ~
+  ~ The above copyright notice and this permission notice shall be included in
+  ~ all copies or substantial portions of the Software.
+  ~
+  ~ Notwithstanding the foregoing, you may not use, copy, modify, merge, publish,
+  ~ distribute, sublicense, create a derivative work, and/or sell copies of the
+  ~ Software in any work that is designed, intended, or marketed for pedagogical or
+  ~ instructional purposes related to programming, coding, application development,
+  ~ or information technology.  Permission for such use, copying, modification,
+  ~ merger, publication, distribution, sublicensing, creation of derivative works,
+  ~ or sale is expressly withheld.
+  ~
+  ~ This project and source code may use libraries or frameworks that are
+  ~ released under various Open-Source licenses. Use of those libraries and
+  ~ frameworks are governed by their own individual licenses.
+  ~
+  ~ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  ~ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  ~ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  ~ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  ~ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  ~ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+  ~ THE SOFTWARE.
+  -->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:padding="16dp"
+  tools:context=".ui.PromoActivity">
+
+  <com.google.android.material.card.MaterialCardView
+    android:id="@+id/cardImage"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="16dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+      <ImageView
+        android:id="@+id/imgProduct"
+        android:layout_width="200dp"
+        android:layout_height="130dp"
+        android:src="@drawable/ball_basketball"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="@string/text_product_image_desc" />
+
+      <TextView
+        android:id="@+id/tvProductLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"
+        android:text="@string/text_product_label"
+        app:layout_constraintTop_toBottomOf="@id/imgProduct"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:text="@string/text_product_brand"
+        android:layout_marginTop="6dp"
+        app:layout_constraintTop_toBottomOf="@id/tvProductLabel"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_product_price"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/imgProduct"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+  </com.google.android.material.card.MaterialCardView>
+
+  <com.google.android.material.card.MaterialCardView
+    android:id="@+id/cardPromo"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="16dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp"
+    android:layout_marginTop="16dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/cardImage">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="16dp">
+      <TextView
+        android:id="@+id/tvPromoCodeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_your_promo_code"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+      <TextView
+        android:id="@+id/tvPromoCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_promo_code"
+        android:textColor="@android:color/black"
+        android:textAllCaps="true"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/tvPromoCodeLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+  </com.google.android.material.card.MaterialCardView>
+
+  <TextView
+    android:id="@+id/tvOfferClaimed"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/text_offer_claimed"
+    android:textAlignment="center"
+    android:textColor="@color/colorPrimary"
+    android:visibility="gone"
+    android:layout_marginTop="32dp"
+    android:textSize="16sp"
+    app:layout_constraintTop_toBottomOf="@id/cardPromo"
+    app:layout_constraintStart_toStartOf="parent"/>
+
+  <com.google.android.material.button.MaterialButton
+    android:id="@+id/btnClaimOffer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:background="@color/colorPrimary"
+    android:text="@string/text_claim_offer"
+    android:textColor="@android:color/white"
+    android:textSize="18sp"
+    app:layout_constraintTop_toBottomOf="@id/tvOfferClaimed"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"/>
+
+  <androidx.constraintlayout.widget.Group
+    android:id="@+id/discountGroup"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="gone"
+    app:constraint_referenced_ids="btnClaimOffer,cardPromo"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

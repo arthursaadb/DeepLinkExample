@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "203157069941",
+    "firebase_url": "https://rwdeeplinking.firebaseio.com",
+    "project_id": "rwdeeplinking",
+    "storage_bucket": "rwdeeplinking.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:203157069941:android:5ec571e63b43b898f1583c",
+        "android_client_info": {
+          "package_name": "com.raywenderlich.android.promoapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "203157069941-1id4lb9omn8c6lhcod19sgvndvcukfbr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.raywenderlich.android.promoapp",
+            "certificate_hash": "20ef2db1fc7dcaf0c45282ec1b17f0baf188a284"
+          }
+        },
+        {
+          "client_id": "203157069941-o4nb8lhclobdgvlbt1dg2usifmcek74d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjFnrXN8Sgx2scRpnnza_Z_cuo7QdB_88"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "203157069941-o4nb8lhclobdgvlbt1dg2usifmcek74d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
